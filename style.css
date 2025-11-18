@@ -1,0 +1,29 @@
+:root{
+  --bg1: #fff8f0;
+  --accent: #ff8fb3;
+  --muted: #6b6b6b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial; background:linear-gradient(135deg,var(--bg1), #fff2e8); color:#222}
+.center-screen{height:100vh;display:flex;align-items:center;justify-content:center}
+.card{background:white;padding:28px;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,0.08);text-align:center;min-width:300px}
+.site-header{display:flex;gap:16px;align-items:center;padding:28px;justify-content:center}
+.site-header .crest{width:84px;height:84px;border-radius:50%;background:linear-gradient(180deg,#fff9e6,#ffd9b3);display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 8px 20px rgba(255,140,160,0.12)}
+.meta{color:var(--muted);margin:0}
+.nav{text-align:center;padding:10px 0;background:transparent}
+.nav a{margin:0 10px;color:var(--accent);font-weight:700;text-decoration:none}
+.container{max-width:900px;margin:22px auto;background:rgba(255,255,255,0.75);padding:22px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.05)}
+.hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+.letter{font-size:18px;line-height:1.6}
+.poem-card{background:linear-gradient(180deg,#fff7f9,#fffaf3);padding:14px;border-radius:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.6)}
+.signature{text-align:right;font-style:italic;margin-top:8px;color:var(--muted)}
+.hearts{position:fixed;right:20px;bottom:20px;pointer-events:none}
+.hearts::before,.hearts::after{content:"💛";display:block;font-size:28px;animation:rise 6s linear infinite;opacity:0.9}
+@keyframes rise{0%{transform:translateY(0) scale(0.9)}50%{transform:translateY(-180px) scale(1.05)}100%{transform:translateY(-360px) scale(0.9)}}
+.footer{text-align:center;padding:20px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.card.placeholder{height:160px;border-radius:10px;background:linear-gradient(180deg,#fff1f6,#fff6f2);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+.timeline{padding-left:18px}
+.timeline li{margin:12px 0}
+button{cursor:pointer}
+.music button{padding:10px 14px;border-radius:10px;border:0;background:linear-gradient(180deg,#ff9bb3,#ff6f93);color:white;font-weight:700}

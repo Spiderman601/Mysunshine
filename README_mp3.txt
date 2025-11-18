@@ -1,0 +1,1 @@
+This folder expects a file named 'romantic-background.mp3' in the assets folder. For convenience the site references a bundled local mp3 filename. To include music, download a royalty-free mp3 (e.g., from pixabay) and save it as assets/romantic-background.mp3
